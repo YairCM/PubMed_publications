@@ -14,7 +14,7 @@ def sturges_rule(data):
 
 
 # Data - PubMed
-file = pd.read_csv("EGFR_pubmed.csv")
+file = pd.read_csv("Data.csv")
 pubmed_df = pd.DataFrame(file)
 pubmed_df = pubmed_df.sort_values('Year', ascending=True)
 pubmed_df = pubmed_df.rename(columns={'Count':'Publications by year'})
